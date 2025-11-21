@@ -1,0 +1,228 @@
+{
+  "app_title": "GOYN Global Reporting Platform",
+  "active_year": "2025",
+  "google_sheets": {
+    "enabled": true,
+    "sheet_name": "GOYN_Master_Database",
+    "credentials_file": "gservice.json"
+  },
+  "communities": [
+    "Select Community",
+    "Barranquilla",
+    "Barwani",
+    "Bhubaneswar",
+    "Bogota",
+    "eThekwini",
+    "Gulbarga",
+    "Mexico City",
+    "Mombasa",
+    "PCMC",
+    "Pune",
+    "Raichur",
+    "Ramgarh",
+    "Rio",
+    "São Paulo",
+    "Tanga",
+    "Thies"
+  ],
+  "years": [
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+  ],
+  "periods": [
+    "Annual Total",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "sections": [
+    {
+      "id": "team",
+      "name": "TEAM SUMMARY",
+      "description": "Core team roles and financial overview.",
+      "indicators": [
+        {"id": "team_exec_director", "name": "Executive Director", "unit": "Text", "type": "text"},
+        {"id": "team_goyn_coordinator", "name": "GOYN Coordinator", "unit": "Text", "type": "text"},
+        {"id": "team_fte_goyn", "name": "# Staff GOYN Team (FTEs)", "unit": "FTEs", "type": "number"},
+        {"id": "team_fte_anchor", "name": "# Staff Anchor Partner (FTEs)", "unit": "FTEs", "type": "number"},
+        {"id": "team_volunteers", "name": "# Volunteers", "unit": "People", "type": "number"},
+        {"id": "budget_goyn_usd", "name": "GOYN Initiative Funding", "unit": "USD", "type": "number"},
+        {"id": "budget_anchor_usd", "name": "Anchor Partner Budget", "unit": "USD", "type": "number"}
+      ]
+    },
+    {
+      "id": "connected",
+      "name": "OY CONNECTED",
+      "description": "Reach: Active and Passive connection.",
+      "indicators": [
+        {"id": "conn_111_active_male", "name": "Active Connected Reach - Male", "unit": "People", "type": "number"},
+        {"id": "conn_111_active_female", "name": "Active Connected Reach - Female", "unit": "People", "type": "number"},
+        {"id": "conn_111_active_nb", "name": "Active Connected Reach - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "conn_111_active_total", "name": "TOTAL Active Connected Reach", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+        
+        {"id": "conn_112_passive_male", "name": "Passive Connected Reach - Male", "unit": "People", "type": "number"},
+        {"id": "conn_112_passive_female", "name": "Passive Connected Reach - Female", "unit": "People", "type": "number"},
+        {"id": "conn_112_passive_nb", "name": "Passive Connected Reach - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "conn_112_passive_total", "name": "TOTAL Passive Connected Reach", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"}
+      ]
+    },
+    {
+      "id": "improved",
+      "name": "OY IMPROVED",
+      "description": "Youth benefiting from interventions.",
+      "indicators": [
+        {"id": "imp_121_career_male", "name": "Career Management Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_121_career_female", "name": "Career Management Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_121_career_nb", "name": "Career Management Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_121_career_total", "name": "TOTAL Career Management Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "imp_122_mindset_male", "name": "Mindset Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_122_mindset_female", "name": "Mindset Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_122_mindset_nb", "name": "Mindset Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_122_mindset_total", "name": "TOTAL Mindset Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "imp_123_skills_male", "name": "Skills (Training) Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_123_skills_female", "name": "Skills (Training) Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_123_skills_nb", "name": "Skills (Training) Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_123_skills_total", "name": "TOTAL Skills (Training) Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "imp_124_workexp_male", "name": "Work Experience Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_124_workexp_female", "name": "Work Experience Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_124_workexp_nb", "name": "Work Experience Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_124_workexp_total", "name": "TOTAL Work Experience Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "imp_125_financial_male", "name": "Financial Inclusion Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_125_financial_female", "name": "Financial Inclusion Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_125_financial_nb", "name": "Financial Inclusion Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_125_financial_total", "name": "TOTAL Financial Inclusion Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "imp_126_other_male", "name": "Other Improved - Male", "unit": "People", "type": "number"},
+        {"id": "imp_126_other_female", "name": "Other Improved - Female", "unit": "People", "type": "number"},
+        {"id": "imp_126_other_nb", "name": "Other Improved - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "imp_126_other_total", "name": "TOTAL Other Improved", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"}
+      ]
+    },
+    {
+      "id": "transformed",
+      "name": "OY TRANSFORMED",
+      "description": "Long-term change.",
+      "indicators": [
+        {"id": "tr_131_edu_male", "name": "Re-connected to Education - Male", "unit": "People", "type": "number"},
+        {"id": "tr_131_edu_female", "name": "Re-connected to Education - Female", "unit": "People", "type": "number"},
+        {"id": "tr_131_edu_nb", "name": "Re-connected to Education - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_131_edu_total", "name": "TOTAL Re-connected to Education", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_132a_emp_new_male", "name": "Employed - New Opportunity - Male", "unit": "People", "type": "number"},
+        {"id": "tr_132a_emp_new_female", "name": "Employed - New Opportunity - Female", "unit": "People", "type": "number"},
+        {"id": "tr_132a_emp_new_nb", "name": "Employed - New Opportunity - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_132a_emp_new_total", "name": "TOTAL Employed - New Opportunity", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_132b_emp_better_male", "name": "Employed - Better/Resilient - Male", "unit": "People", "type": "number"},
+        {"id": "tr_132b_emp_better_female", "name": "Employed - Better/Resilient - Female", "unit": "People", "type": "number"},
+        {"id": "tr_132b_emp_better_nb", "name": "Employed - Better/Resilient - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_132b_emp_better_total", "name": "TOTAL Employed - Better/Resilient", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_133a_biz_start_male", "name": "Started a Business - Male", "unit": "People", "type": "number"},
+        {"id": "tr_133a_biz_start_female", "name": "Started a Business - Female", "unit": "People", "type": "number"},
+        {"id": "tr_133a_biz_start_nb", "name": "Started a Business - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_133a_biz_start_total", "name": "TOTAL Started a Business", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_133b_biz_grow_male", "name": "Grew a Business - Male", "unit": "People", "type": "number"},
+        {"id": "tr_133b_biz_grow_female", "name": "Grew a Business - Female", "unit": "People", "type": "number"},
+        {"id": "tr_133b_biz_grow_nb", "name": "Grew a Business - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_133b_biz_grow_total", "name": "TOTAL Grew a Business", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_133c_self_emp_male", "name": "Self-Employed - Male", "unit": "People", "type": "number"},
+        {"id": "tr_133c_self_emp_female", "name": "Self-Employed - Female", "unit": "People", "type": "number"},
+        {"id": "tr_133c_self_emp_nb", "name": "Self-Employed - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_133c_self_emp_total", "name": "TOTAL Self-Employed", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "tr_134_other_male", "name": "Other Transformed - Male", "unit": "People", "type": "number"},
+        {"id": "tr_134_other_female", "name": "Other Transformed - Female", "unit": "People", "type": "number"},
+        {"id": "tr_134_other_nb", "name": "Other Transformed - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "tr_134_other_total", "name": "TOTAL Other Transformed", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"}
+      ]
+    },
+    {
+      "id": "sustained",
+      "name": "OY SUSTAINED",
+      "description": "Sustained changes.",
+      "indicators": [
+        {"id": "sus_141_income_male", "name": "Increased Income - Male", "unit": "People", "type": "number"},
+        {"id": "sus_141_income_female", "name": "Increased Income - Female", "unit": "People", "type": "number"},
+        {"id": "sus_141_income_nb", "name": "Increased Income - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "sus_141_income_total", "name": "TOTAL Increased Income", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "sus_142_savings_male", "name": "Increased Savings - Male", "unit": "People", "type": "number"},
+        {"id": "sus_142_savings_female", "name": "Increased Savings - Female", "unit": "People", "type": "number"},
+        {"id": "sus_142_savings_nb", "name": "Increased Savings - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "sus_142_savings_total", "name": "TOTAL Increased Savings", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "sus_143_assets_male", "name": "Increased Assets - Male", "unit": "People", "type": "number"},
+        {"id": "sus_143_assets_female", "name": "Increased Assets - Female", "unit": "People", "type": "number"},
+        {"id": "sus_143_assets_nb", "name": "Increased Assets - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "sus_143_assets_total", "name": "TOTAL Increased Assets", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"}
+      ]
+    },
+    {
+      "id": "collaborative",
+      "name": "COLLABORATIVE",
+      "description": "Governance & Ecosystem.",
+      "indicators": [
+        {"id": "col_211_yag_male", "name": "OY in YAG - Male", "unit": "People", "type": "number"},
+        {"id": "col_211_yag_female", "name": "OY in YAG - Female", "unit": "People", "type": "number"},
+        {"id": "col_211_yag_nb", "name": "OY in YAG - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "col_211_yag_total", "name": "TOTAL OY in YAG", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "col_212_yag_meetings", "name": "# YAG Meetings", "unit": "#", "type": "number"},
+        {"id": "col_213_yif_projects", "name": "# YIF Projects Funded", "unit": "#", "type": "number"},
+
+        {"id": "col_214_innovators_male", "name": "YIF Innovators Supported - Male", "unit": "People", "type": "number"},
+        {"id": "col_214_innovators_female", "name": "YIF Innovators Supported - Female", "unit": "People", "type": "number"},
+        {"id": "col_214_innovators_nb", "name": "YIF Innovators Supported - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "col_214_innovators_total", "name": "TOTAL YIF Innovators Supported", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "col_215_yif_invested", "name": "Amount invested in YIF", "unit": "USD", "type": "number"},
+        {"id": "col_221_members_public", "name": "# Members - Public Sector", "unit": "#", "type": "number"},
+        {"id": "col_221_members_private", "name": "# Members - Private Sector", "unit": "#", "type": "number"},
+        {"id": "col_221_members_cso", "name": "# Members - Civil Society", "unit": "#", "type": "number"},
+        {"id": "col_224_events", "name": "# Collaborative Events", "unit": "#", "type": "number"},
+        {"id": "col_231_capacity", "name": "# Orgs with improved capacity", "unit": "#", "type": "number"},
+        {"id": "col_244_partnerships", "name": "# New formal partnerships", "unit": "#", "type": "number"}
+      ]
+    },
+    {
+      "id": "systemschange",
+      "name": "SYSTEM CHANGE INDICATORS",
+      "description": "Policy & Funding.",
+      "indicators": [
+        {"id": "adv_311_issues", "name": "# Issues identified for advocacy", "unit": "#", "type": "number"},
+        {"id": "adv_312_proposals", "name": "# Policy proposals developed", "unit": "#", "type": "number"},
+        {"id": "adv_321_sens_private", "name": "# Private sector orgs sensitized", "unit": "#", "type": "number"},
+
+        {"id": "adv_323_oy_civic_male", "name": "OY trained in civic processes - Male", "unit": "People", "type": "number"},
+        {"id": "adv_323_oy_civic_female", "name": "OY trained in civic processes - Female", "unit": "People", "type": "number"},
+        {"id": "adv_323_oy_civic_nb", "name": "OY trained in civic processes - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "adv_323_oy_civic_total", "name": "TOTAL OY trained in civic processes", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "adv_332_policies", "name": "# Policies/practices changed", "unit": "#", "type": "number"},
+
+        {"id": "adv_334_oy_benefit_male", "name": "OY benefiting from changes - Male", "unit": "People", "type": "number"},
+        {"id": "adv_334_oy_benefit_female", "name": "OY benefiting from changes - Female", "unit": "People", "type": "number"},
+        {"id": "adv_334_oy_benefit_nb", "name": "OY benefiting from changes - Non-Binary", "unit": "People", "type": "number"},
+        {"id": "adv_334_oy_benefit_total", "name": "TOTAL OY benefiting from changes", "unit": "People", "type": "number", "derived": true, "help": "Auto-sum"},
+
+        {"id": "adv_341_raised", "name": "Amount raised locally (USD)", "unit": "USD", "type": "number"},
+        {"id": "adv_342_influenced", "name": "Funding influenced for OY (USD)", "unit": "USD", "type": "number"},
+        {"id": "sys_youth_pop", "name": "Total Youth Population", "unit": "People", "type": "number"},
+        {"id": "sys_oy_pop", "name": "Total OY Population", "unit": "People", "type": "number"},
+        {"id": "sys_unemp_rate", "name": "Youth Unemployment Rate", "unit": "%", "type": "number"}
+
+      ]
+    }
+    
+  ]
+}

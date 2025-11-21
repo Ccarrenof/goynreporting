@@ -2,7 +2,7 @@
   "app_title": "GOYN Global Reporting Platform",
   "active_year": "2025",
   "google_sheets": {
-    "enabled": true,
+    "enabled": false,
     "sheet_name": "GOYN_Master_Database",
     "credentials_file": "gservice.json"
   },
